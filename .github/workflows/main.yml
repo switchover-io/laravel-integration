@@ -34,8 +34,8 @@ jobs:
       - name: Test package
         run: ./vendor/bin/phpunit
 
-      #- uses: codecov/codecov-action@v1
-      #  with:
-      #    token: ${{ secrets.CODECOV_TOKEN }}
-      #    files: ./build/logs/clover.xml
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./build/logs/clover.xml
 

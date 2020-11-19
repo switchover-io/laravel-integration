@@ -54,7 +54,7 @@ class HomeController extends Controller
 
 ## Advanced Configuration
 
-You can also publish the underlying config file to get full control over the config e.g. the Guzzle Http client:
+You can also publish the underlying config file to get full control over the config e.g. for the Guzzle Http client:
 
 ```bash
 php artisan vendor:publish --tag="switchover-config"
