@@ -1,0 +1,47 @@
+{
+    "name": "switchover/laravel-integration",
+    "description": "Laravel Integration for Switchover PHP SDK. Feature Toggle Management made easy.",
+    "version": "0.5.0-alpha",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Hofmann",
+            "email": "michael.hofmann@takso.de",
+            "homepage": "https://switch-over.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "switchover/php-sdk": "^0.5.2",
+        "laravel/framework": "~6.0|~7.0|~8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwitchoverLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwitchoverLaravel\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SwitchoverLaravel\\SwitchoverServiceProvider"
+            ],
+            "aliases": {
+                "Switchover": "SwitchoverLaravel\\Switchover"
+            }
+        }
+    }
+}

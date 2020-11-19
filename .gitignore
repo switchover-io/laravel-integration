@@ -1,0 +1,5 @@
+vendor/
+build/
+
+.DS_Store
+.log
