@@ -1,5 +1,9 @@
 # Switchover Laravel Integration
 
+![CI](https://github.com/switchover-io/laravel-integration/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/switchover-io/laravel-integration/branch/main/graph/badge.svg?token=IQNFOXJIWX)](https://codecov.io/gh/switchover-io/laravel-integration)
+![info](https://img.shields.io/badge/-alpha-blue)
+
 ## Switchover
 
 Switchover is a Software-As-A-Service for managing feature toggles (aka switches, flags or feature flips) in your application. Use it for Continous Integration, Continous Delivery, A/B-Testing, Canary Releases, Experementing and everything else you can think of.
