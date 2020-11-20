@@ -19,7 +19,7 @@ class DirectivesTest extends Testcase {
         $blade = "@hasConditionalFeature('my-feature', [ 'userId' => Auth::user()->email, 'foo' => 'bar'])";
         $actual = $this->blade->compileString($blade);
 
-        $expected = "<?php if (app('switchover')->toggleValue('my-feature', new \Switchover\Context([ 'userId' => Auth::user()->email, 'foo' => 'bar']), false)) : ?>";
+        $expected = "<?php if (app('switchover')->toggleValue('my-feature', false, new \Switchover\Context([ 'userId' => Auth::user()->email, 'foo' => 'bar']))) : ?>";
 
         $this->assertEquals($expected, $actual);
     }
