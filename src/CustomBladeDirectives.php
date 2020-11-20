@@ -30,7 +30,7 @@ class CustomBladeDirectives
             $name = $args->get(0);
             $context = join(', ', $args->slice(1)->toArray());
             
-            return "<?php if (app('switchover')->toggleValue({$name}, new Context({$context}), false)) : ?>";
+            return "<?php if (app('switchover')->toggleValue({$name}, new \Switchover\Context({$context}), false)) : ?>";
         });
 
         Blade::directive('endHasFeature', function () {
