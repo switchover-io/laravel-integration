@@ -1,7 +1,7 @@
 {
     "name": "switchover/laravel-integration",
     "description": "Laravel Integration for Switchover PHP SDK. Feature Toggle Management made easy.",
-    "version": "0.5.1-alpha",
+    "version": "0.5.2-alpha",
     "type": "library",
     "license": "MIT",
     "authors": [

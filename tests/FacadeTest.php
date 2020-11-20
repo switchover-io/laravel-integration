@@ -2,7 +2,7 @@
 
 namespace SwitchoverLaravel;
 
-class SwitchoverTest extends Testcase {
+class FacadeTest extends Testcase {
 
     public function testToggleKeys() {
         $this->assertEquals(0, count(Switchover::getToggleKeys()));

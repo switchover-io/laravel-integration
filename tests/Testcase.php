@@ -7,6 +7,16 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class Testcase extends OrchestraTestCase {
 
+
+    protected $blade;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->blade = app('blade.compiler');
+    }
+
     /**
      * Define environment setup.
      *
@@ -44,6 +54,7 @@ class Testcase extends OrchestraTestCase {
             'Switchover' => Switchover::class,
         ];
     }
+
 
 
 }

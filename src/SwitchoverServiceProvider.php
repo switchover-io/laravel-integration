@@ -21,6 +21,7 @@ class SwitchoverServiceProvider extends ServiceProvider {
      */
     public function boot() {
         $this->registerPublishing();
+        $this->registerBladeDirectives();
     }
 
     /**
@@ -31,6 +32,20 @@ class SwitchoverServiceProvider extends ServiceProvider {
     public function register() {
         $this->configure();
         $this->registerSwitchover();
+    }
+
+
+    /**
+     * Register any custom directives
+     *
+     * @return void
+     */
+    private function registerBladeDirectives() {
+        if (!class_exists('\Blade')) {
+            return;
+        }
+
+        (new CustomBladeDirectives)->register();
     }
 
     /**
