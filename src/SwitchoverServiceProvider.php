@@ -77,6 +77,11 @@ class SwitchoverServiceProvider extends ServiceProvider {
             $logger = $app['log'];
 
             $ttl = Config::get('switchover.cache.time');
+
+            if (is_string($ttl)) {
+                $ttl = intval($ttl);
+            }
+
             $httpOptions =  Config::get('switchover.http');
             $sdkKey = Config::get('switchover.sdkkey');
 

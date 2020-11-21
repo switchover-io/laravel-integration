@@ -28,6 +28,7 @@ class Testcase extends OrchestraTestCase {
         // Setup default database to use sqlite :memory:
         $app['config']->set('cache.default', 'array');
         $app['config']->set('switchover.sdkkey', '<SDK-KEY>');
+        $app['config']->set('switchover.cache.time', '60');
         $app['config']->set('switchover.http', []);
        
     }

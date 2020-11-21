@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/switchover-io/laravel-integration/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/switchover-io/laravel-integration/branch/main/graph/badge.svg?token=IQNFOXJIWX)](https://codecov.io/gh/switchover-io/laravel-integration)
-![info](https://img.shields.io/badge/-alpha-blue)
 
 ## Switchover
 
