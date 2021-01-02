@@ -64,3 +64,9 @@ php artisan vendor:publish --tag="switchover-config"
 ```
 
 Now, you should have the `switchover.config` in your app config folder.
+
+## Documentation
+
+Learn more on the official documentation: <a href="https://support.switch-over.io/docs/quick-primer">Switchover Quickstart</a>
+
+
